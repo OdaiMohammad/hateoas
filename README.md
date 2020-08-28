@@ -1,3 +1,6 @@
+[![license](https://img.shields.io/github/license/OdaiMohammad/hateoas)](https://img.shields.io/github/license/OdaiMohammad/hateoas)
+[![test](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas/Test%20workflow?label=test)](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas/Test%20workflow?label=test)
+[![open issues](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas)](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas)
 # Spring HATEOAS abstraction
 ## About Spring HATEOAS
 "Spring HATEOAS allows for creating self-describing APIs wherein resources returned from an 
@@ -21,8 +24,8 @@ gets old quickly.
 Let's look at an example from [Spring in Action](https://www.manning.com/books/spring-in-action-fifth-edition) by Craig Walls
 :
 
-Say we have a "Taco" object that we would like to return a list od to the client. To support HATEOAS 
-we must first write a resource for a Taco. That would look something like this:
+Say we have a "Taco" object that we would like to return a list of to the client. Spring HATEOAS 
+requires us to write a resource for a Taco. That would look something like this:
 
 ```java
 public class TacoResource extends ResourceSupport {
@@ -67,7 +70,7 @@ public class TacoResourceAssembler
 }
 ```
 
-Finally, we can use our TAco resource and resource assembler to return a HATEOAS-supporting response to the clieant:
+Finally, we can use our Taco resource and resource assembler to return a self-describing response to the client:
 ```java
 @GetMapping("/recent")
 public Resources<TacoResource> recentTacos() {
@@ -90,7 +93,7 @@ public Resources<TacoResource> recentTacos() {
 }
 ```
 
-You probably see from this example, that this process becomes more tedious as we add more and more 
+You can probably see from this example, that this process becomes more tedious as we add more and more 
 domain objects.
 
 ## Goal
