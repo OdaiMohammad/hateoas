@@ -99,3 +99,10 @@ domain objects.
 ## Goal
 Implement an abstraction of Spring HATEOAS to streamline the creation of resources and resource assemblers
 using Java annotations that will create these classes for us.
+
+## About the sample application
+The sample application included in the repository exposes an extremely simple RESTful API for a project management app.
+
+The app allows for viewing or adding projects along with their associated tasks. It uses an H2 embedded database so it can portable. 
+
+There's really not much more to say about the ample application.
