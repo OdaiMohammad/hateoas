@@ -1,6 +1,7 @@
-[![license](https://img.shields.io/github/license/OdaiMohammad/hateoas)](https://img.shields.io/github/license/OdaiMohammad/hateoas)
-[![test](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas/Test%20workflow?label=test)](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas/Test%20workflow?label=test)
-[![open issues](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas)](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas)
+[![license](https://img.shields.io/github/license/OdaiMohammad/hateoas-x)](https://img.shields.io/github/license/OdaiMohammad/hateoas-x)
+[![tag](https://img.shields.io/github/v/tag/OdaiMohammad/hateoas-x)](https://img.shields.io/github/v/tag/OdaiMohammad/hateoas-x)
+[![test](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas-x/Test%20workflow?label=test)](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas-x/Test%20workflow?label=test)
+[![open issues](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas-x)](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas-x)
 # Spring HATEOAS abstraction
 ## About Spring HATEOAS
 "Spring HATEOAS allows for creating self-describing APIs wherein resources returned from an 
@@ -113,4 +114,4 @@ The sample application included in the repository exposes an extremely simple RE
 
 The app allows for viewing or adding projects along with their associated tasks. It uses an H2 embedded database so it can portable. 
 
-There's really not much more to say about the ample application.
+There's really not much more to say about the sample application.

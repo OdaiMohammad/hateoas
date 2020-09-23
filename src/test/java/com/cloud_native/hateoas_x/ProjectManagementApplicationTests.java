@@ -14,19 +14,16 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas;
+package com.cloud_native.hateoas_x;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-/**
- * An extremely simple project management app
- */
-@SpringBootApplication
-public class ProjectManagementApplication {
+@SpringBootTest
+class ProjectManagementApplicationTests {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ProjectManagementApplication.class, args);
+    @Test
+    void contextLoads() {
     }
 
 }

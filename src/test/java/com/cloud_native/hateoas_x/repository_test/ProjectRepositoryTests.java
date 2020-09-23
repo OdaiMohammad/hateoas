@@ -14,10 +14,10 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas.repository_test;
+package com.cloud_native.hateoas_x.repository_test;
 
-import com.cloud_native.hateoas.models.Project;
-import com.cloud_native.hateoas.repositories.ProjectRepository;
+import com.cloud_native.hateoas_x.models.Project;
+import com.cloud_native.hateoas_x.repositories.ProjectRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
