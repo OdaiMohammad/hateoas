@@ -14,7 +14,7 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas.models;
+package com.cloud_native.hateoas_x.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,9 +22,9 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.Set;
@@ -49,7 +49,7 @@ public class Project {
      * Project name.
      * The project's name is required and must at least be 5 characters long.
      */
-    @NotNull
+    @NonNull
     @Size(min = 5)
     private String name;
 
@@ -63,8 +63,7 @@ public class Project {
      * Each project has many tasks that are unique.
      * When a project is delete, its tasks are also deleted.
      */
-    @OneToMany
-    @JoinColumn(name = "project_id")
+    @OneToMany(mappedBy = "project")
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Set<Task> tasks;
 

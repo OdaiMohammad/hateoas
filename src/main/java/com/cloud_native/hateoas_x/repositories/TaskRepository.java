@@ -14,10 +14,13 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas.repositories;
+package com.cloud_native.hateoas_x.repositories;
 
-import com.cloud_native.hateoas.models.Task;
+import com.cloud_native.hateoas_x.models.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface TaskRepository extends JpaRepository<Task, Long> {
+    List<Task> findAllByProject_Id(long projectID);
 }

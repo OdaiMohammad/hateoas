@@ -113,4 +113,4 @@ The sample application included in the repository exposes an extremely simple RE
 
 The app allows for viewing or adding projects along with their associated tasks. It uses an H2 embedded database so it can portable. 
 
-There's really not much more to say about the ample application.
+There's really not much more to say about the sample application.

@@ -14,17 +14,17 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas.models;
+package com.cloud_native.hateoas_x.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.FutureOrPresent;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
@@ -48,7 +48,7 @@ public class Task {
      * Task name.
      * The tasks's name is required and must at least be 5 characters long.
      */
-    @NotNull
+    @NonNull
     @Size(min = 5)
     private String name;
 
@@ -74,7 +74,17 @@ public class Task {
     private Date endDate;
 
     /**
-     * task creation date.
+     * Project tasks.
+     * Each project has many tasks that are unique.
+     * When a project is delete, its tasks are also deleted.
+     */
+    @ManyToOne
+    @JoinColumn(name = "project_id")
+    @NonNull
+    private Project project;
+
+    /**
+     * Task creation date.
      */
     @Column(name = "created_date")
     @CreatedDate

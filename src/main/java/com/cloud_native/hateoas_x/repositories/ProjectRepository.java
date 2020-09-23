@@ -14,16 +14,12 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas.config;
+package com.cloud_native.hateoas_x.repositories;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
+import com.cloud_native.hateoas_x.models.Project;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-@Configuration
-@EnableTransactionManagement
-@EnableJpaRepositories
-@EnableJpaAuditing
-public class JpaConfig {
+@Repository
+public interface ProjectRepository extends JpaRepository<Project, Long> {
 }

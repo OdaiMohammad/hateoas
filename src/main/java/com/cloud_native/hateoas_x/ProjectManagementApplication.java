@@ -14,12 +14,19 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas.repositories;
+package com.cloud_native.hateoas_x;
 
-import com.cloud_native.hateoas.models.Project;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@Repository
-public interface ProjectRepository extends JpaRepository<Project, Long> {
+/**
+ * An extremely simple project management app
+ */
+@SpringBootApplication
+public class ProjectManagementApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ProjectManagementApplication.class, args);
+    }
+
 }

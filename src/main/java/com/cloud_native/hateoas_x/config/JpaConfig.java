@@ -14,16 +14,16 @@
  * copies or substantial portions of the Software.
  */
 
-package com.cloud_native.hateoas;
+package com.cloud_native.hateoas_x.config;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@SpringBootTest
-class ProjectManagementApplicationTests {
-
-    @Test
-    void contextLoads() {
-    }
-
+@Configuration
+@EnableTransactionManagement
+@EnableJpaRepositories
+@EnableJpaAuditing
+public class JpaConfig {
 }
