@@ -24,8 +24,16 @@ gets old quickly.
 Let's look at an example from [Spring in Action](https://www.manning.com/books/spring-in-action-fifth-edition) by Craig Walls
 :
 
-Say we have a "Taco" object that we would like to return a list of to the client. Spring HATEOAS 
-requires us to write a resource for a Taco. That would look something like this:
+Say we have the following "Taco" object that we would like to return a list of to the client.
+
+```java
+@Data
+public class Taco {
+    private String name;
+    private List<String> ingredients;
+}
+```
+Spring HATEOAS requires us to write a resource for a Taco. That would look something like this:
 
 ```java
 public class TacoResource extends ResourceSupport {
