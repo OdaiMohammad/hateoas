@@ -2,6 +2,14 @@
 [![tag](https://img.shields.io/github/v/tag/OdaiMohammad/hateoas-x)](https://img.shields.io/github/v/tag/OdaiMohammad/hateoas-x)
 [![test](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas-x/Test%20workflow?label=test)](https://img.shields.io/github/workflow/status/OdaiMohammad/hateoas-x/Test%20workflow?label=test)
 [![open issues](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas-x)](https://img.shields.io/github/issues-raw/OdaiMohammad/hateoas-x)
+
+# Project develeopment haulted
+Due to the difficult economic situation in my country, development for this project is, unfortunately, halted.
+I will resume development as soon as possible.
+In the meantime, I highly appreciate your contributions.
+
+Thank you.
+
 # Spring HATEOAS abstraction
 ## About Spring HATEOAS
 "Spring HATEOAS allows for creating self-describing APIs wherein resources returned from an 
