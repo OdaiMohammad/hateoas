@@ -5,7 +5,9 @@
 
 # Project develeopment haulted
 Due to the difficult economic situation in my country, development for this project is, unfortunately, halted.
+
 I will resume development as soon as possible.
+
 In the meantime, I highly appreciate your contributions.
 
 Thank you.
